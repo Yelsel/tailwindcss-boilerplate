@@ -31,6 +31,12 @@ npm run clean
 ```
 > This will remove ./dist & ./build folder from your project
 
+***4. Deploy to GH-Pages***
+```bash
+npm run deploy
+```
+> This will automatically deploy your ./build to gh-pages
+
 ## Configuration
 You can configure ***gulp.config.js*** and ***tailwind.config.js*** to your own needs.
 
