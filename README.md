@@ -16,12 +16,13 @@ npm install
 ```bash
 npm run dev
 ```
-This will build your website from ./src to ./dist and serve it with Browser-Sync.
+> This will build your website from ./src to ./dist and serve it with Browser-Sync.
 
 4. To build your website for production run
 ```bash
 npm run build
 ```
+> Output will be in ./build folder.
 
 ## Configuration
 You can configure ***gulp.config.js*** and ***tailwind.config.js*** to your own needs.
