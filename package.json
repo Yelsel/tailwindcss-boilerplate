@@ -2,7 +2,7 @@
   "name": "tailwindcss-boilerplate",
   "version": "1.0.0",
   "description": "a simple boilerplate for TailwindCSS",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "build": "postcss src/styles.css -o build/assets/css/styles.css"
   },
@@ -20,5 +20,13 @@
     "autoprefixer": "^10.2.5",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0"
   }
 }
