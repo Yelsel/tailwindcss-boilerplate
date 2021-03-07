@@ -1,32 +1,31 @@
 # Simple TailwindCSS boilerplate
 A simple customizable tailwindcss boilerplate with Gulp that helps you automate development and production tasks
-
+<br/>
 ## Installation
-
-1. Clone repository
+***1. Clone repository***
 ```bash
 git clone https://github.com/Yelsel/tailwindcss-boilerplate.git
 ```
-  
-2. Install dependencies
+<br/>  
+***2. Install dependencies***
 ```bash
 npm install
 ```
-
+<br/>
 ## Getting Started
-1. Run development environment
+***1. Run development environment***
 ```bash
 npm run dev
 ```
 > This will build your website from ./src to ./dist and serve it with Browser-Sync.
-  
-2. To build your website for production run
+<br/>  
+***2. To build your website for production run***
 ```bash
 npm run build
 ```
 > Output will be in ./build folder.
-  
-3. Clean up ./dist & ./build
+<br/>  
+***3. Clean up ./dist & ./build***
 ```bash
 npm run clean
 ```
