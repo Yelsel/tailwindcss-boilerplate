@@ -9,7 +9,7 @@ const postcss = require('gulp-postcss');
 const imagemin = require('gulp-imagemin');
 const cleanCSS = require('gulp-clean-css');
 const purgecss = require('gulp-purgecss');
-const uglify = require('gulp-terser');//To Minify JS files
+const uglify = require('gulp-terser');
 
 function livePreview(done) {
     browserSync.init({
@@ -116,9 +116,14 @@ exports.dev = series(
     watchFiles
 );
 
+exports.dist = series(
+    devClean,
+    parallel(devHTML, devStyles, devScripts, devImages),
+);
+
 exports.prod = series(
     prodClean,
-    parallel(prodHTML, prodStyles, prodStyles, prodImages),
+    parallel(prodHTML, prodStyles, prodScripts, prodImages),
     buildFinish
 );
 

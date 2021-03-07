@@ -5,8 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp prod",
-    "clean": "gulp clean"
+    "build": "gulp dist && gulp prod",
+    "clean": "gulp clean",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "tailwind",
@@ -27,6 +28,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
