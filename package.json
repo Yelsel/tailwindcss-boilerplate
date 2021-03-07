@@ -4,7 +4,9 @@
   "description": "a simple boilerplate for TailwindCSS",
   "main": "gulpfile.js",
   "scripts": {
-    "build": "postcss src/styles.css -o build/assets/css/styles.css"
+    "dev": "gulp dev",
+    "build": "gulp prod",
+    "clean": "gulp clean"
   },
   "keywords": [
     "tailwind",
@@ -12,7 +14,8 @@
     "tailwindcss",
     "postcss",
     "postcss-cli",
-    "autoprefixer"
+    "autoprefixer",
+    "gulp"
   ],
   "author": "@yelsel",
   "license": "MIT",
@@ -25,8 +28,12 @@
     "browser-sync": "^2.26.14",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-purgecss": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "gulp-terser": "^2.0.1"
   }
 }
