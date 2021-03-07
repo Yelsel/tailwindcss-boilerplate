@@ -1,4 +1,4 @@
-# Simple TailwindCSS boilerplate
+# TailwindCSS boilerplate with Gulp tasks
 A simple customizable tailwindcss boilerplate with Gulp that helps you automate development and production tasks
 
 ## Installation
